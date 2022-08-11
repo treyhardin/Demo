@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <section class="hero-section">
+        <h2>Discover</h2>
+        <h1>L'Or Barista</h1>
+    </section>
+    <section class="detail-section">
+        <h3>Café Quality Experience</h3>
+        <p>True espresso needs high pressure. The L’OR BARISTA coffee machine delivers. Brewing espresso at up to 19 bars of pressure — ensuring authentic café quality.</p>
+    </section>
+    <section class="detail-section">
+        <h3>19 Bars of Pressure</h3>
+        <p>True espresso needs high pressure. The L’OR BARISTA coffee machine delivers. Brewing espresso at up to 19 bars of pressure — ensuring authentic café quality.</p>
+    </section>
+
+    
+    <lottie-player id="anim" src="/barista.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+
+    <script>
+        LottieInteractivity.create({
+        container: document.documentElement,
+        mode:'scroll',
+        player: '#anim',
+        actions: [
+            {
+                visibility: [0,1],
+                type: 'seek',
+                frames: [0, 160],
+            },
+        ]
+    })
+    </script>
+</body>
+</html>

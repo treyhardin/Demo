@@ -1,0 +1,65 @@
+:root {
+    --color-slate: #0e0e0e;
+    --color-reverse: #E1E1E1;
+    --color-gold: #E3AD42;
+}
+
+html {
+    background-color: var(--color-slate);
+    color: var(--color-reverse);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-gold);
+    margin: 0;
+}
+
+h1 {
+    font-size: 142px;
+}
+
+h2 {
+    font-size: 48px;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    padding: 60px;
+    flex-direction: column;
+}
+
+section p,
+section h3 {
+    width: 30%;
+}
+
+.hero-section {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.detail-section {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#anim {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
